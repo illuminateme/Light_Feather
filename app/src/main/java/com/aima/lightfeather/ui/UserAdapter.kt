@@ -13,7 +13,7 @@ RecyclerView.Adapter<UserAdapter.UserViewHolder>()
 {
     class UserViewHolder (private val binding: UserItemBinding):
     RecyclerView.ViewHolder(binding.root) {
-        fun bindUser(user: User){
+        fun bind(user: User){
             binding.apply {
                 nameDisplay.text = user.name
                 emailDisplay.text = user.email
